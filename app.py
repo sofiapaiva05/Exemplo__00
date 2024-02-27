@@ -9,7 +9,7 @@ from classes.Person import Person
 app = Flask(__name__)
 path = 'data/'
 Person.read(path)
-prev_option = ""
+prev_option = "a"
 
 @app.route("/", methods=["post","get"])
 def index():
